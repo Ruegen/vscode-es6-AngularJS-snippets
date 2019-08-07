@@ -1,0 +1,50 @@
+{
+	"es6 AngularJS component": {
+		"prefix": "ngcomponent",
+		"body": [
+			"export default {",
+			"  name: \"myComponent\",",
+			"  template: \"\",",
+			"  bindings: {},",
+			"  controllerAs: \"vm\",",
+			"  controller: class {",
+			"    static get \\$inject() {",
+			"      return [\"\\$scope\"];",
+			"    }",
+			"",
+			"    constructor(\\$scope) {",
+			"      this.\\$scope = \\$scope;",
+			"    }",
+			"",
+			"    \\$onInit() {}",
+			"",
+			"    // your functions here",
+			"  }",
+			"};",
+		],
+		"description": "es6 AngularJS component"
+	},
+	"es6 AngularJS service": {
+		"prefix": "ngservice",
+		"body": [
+			"export default class MyService {",
+			"  static get \\$inject() {",
+			"    return [\"\\$http\"];",
+			"  }",
+			"",
+			"  static get name() {",
+			"    return \"myService\";",
+			"  }",
+			"",
+			"  constructor(\\$http) {",
+			"    this.\\$http = \\$http;",
+			"  }",
+			"",
+			"  // your functions here",
+			"}",
+			""
+		],
+		"description": "es6 AngularJS service"
+	}
+	
+}
